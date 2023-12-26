@@ -21,6 +21,16 @@
   <!-- Una de las reglas de los componentes es que siempre deben retornar algo en la funcion -->
   <!-- Cada componente de react yo lo voy a invocar desde otro lugar, entonces debe ir el export default App  -->
   <!-- Otro de los objetivos de react es que solamente haya archivos que solamente use -->
+  <!-- Como recomendacion, si ya sabemos que libreria usaremos en nuestro proyecto, las descargamos en la rama main
+  mediante el comando npm -->
+  <!-- Si eliminamos sin querer el package-lock o el node_modules no hay problema ya que podemos restaurarlos sin problemas
+  con el comando npm install. El package.json hay que tener cuidado ya que aca esta la info relacionada a nuestras librerias. -->
+  <!-- Siempre ver el package.json para ver que dependencias tenemos instaladas -->
+  <!-- Toda libreria que yo instalo se guarda en node_modules -->
+  <!-- Para poder utilizar las hojas de estilo de bootstrap debemos importarla ya sea en app.jsx o main.jsx -->
+  <!-- Siempre que haya instalado una libreria con npm install asique al importar las cosas que estan en
+  node_module hago de cuenta que la ruta ya estoy posicionado en la carpeta por ejemplo: 'bootstrap/' -->
+  <!-- Para cambiarle el estilo a las etiquetas html, react utiliza el className de JS -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
