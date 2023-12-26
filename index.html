@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <!-- Virtual DOM es una representacion visual del DOM de JS. Al crear un proyecto nuevo
+    react hace una copia del DOM de JS, lo que esto permite mejorar el renderizado de un nodo de un
+  elemento de html al realizar un cambio y no realizar el renderizado completo de la pagina. -->
+  <!-- Vite nos ayuda a realizar un template, archivos preconfigurados para nuestro proyecto. -->
+  <!-- Para comenzaar nuestro proyecto se debe instalar como primer paso las dependencias con el comando
+  npm install. Esto sirve para descargar la carpeta node_module -->
+  <!-- Cuando subimos nuestro proyecto a github, la carpeta de node_modules no se sube ya que es ignorada por github, ya
+  que es una carpeta pesada y no es necesaria subirla. -->
+  <!-- Para ver el diseño, debemos ir a app.jsx -->
+  <!-- para importar estilos de hace con import 'estilo.css' -->
+  <!-- Borramos los import del archivo app.jsx -->
+  <!-- Una de las reglas de los componentes es que siempre deben retornar algo en la funcion -->
+  <!-- Cada componente de react yo lo voy a invocar desde otro lugar, entonces debe ir el export default App  -->
+  <!-- Otro de los objetivos de react es que solamente haya archivos que solamente use -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
