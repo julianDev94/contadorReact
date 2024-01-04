@@ -7,6 +7,13 @@
     <title>Vite + React</title>
   </head>
   <body>
+    <!-- REACT es una libreria para el front end, en donde se desarrollan interfaces de usuario mucho mas eficientes.
+    Es decir resuelve el problema de maquetado con la idea de componentes.
+  Un componente es una archivo que tiene incluido maquetado, estilo y logica. Esto es, cada componente tiene
+encapsulado todo lo necesario para poder ejecutarse ese componente. La idea de los componentes es que sean
+facilmente reutilizables, es decir que pueda copiar ese archivo y pueda utilizarse en otro proyecto. La extension de los archivos
+componentes es .jsx -->
+<!-- El virtual DOM es una representacion visual del DOM. Renderizar es volver a dibujar todo lo que tengo en pantalla -->
     <!-- Virtual DOM es una representacion visual del DOM de JS. Al crear un proyecto nuevo
     react hace una copia del DOM de JS, lo que esto permite mejorar el renderizado de un nodo de un
   elemento de html al realizar un cambio y no realizar el renderizado completo de la pagina. -->
@@ -31,6 +38,14 @@
   <!-- Siempre que haya instalado una libreria con npm install asique al importar las cosas que estan en
   node_module hago de cuenta que la ruta ya estoy posicionado en la carpeta por ejemplo: 'bootstrap/' -->
   <!-- Para cambiarle el estilo a las etiquetas html, react utiliza el className de JS -->
+  <!-- El componente principal que esta cargando es app.jsx
+  El achivo main.jsx es un archivo que tiene logica y que simplemente dice cual es el primer componente que
+va a cargar y el que carga es app.jsx  -->
+<!-- Los componentes siempre se crean dentro de la carpeta src (source). Y si vamos a crear varios componentes
+creamos una carpeta components -->
+<!-- Reglas de react para crear componentes:
+1- El nombre de los archivos de los componentes siempre deben comenzar con mayuscula -->
+<!-- Para crear un esqueleto de react, escribiendo rsc (react stateless components) -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
