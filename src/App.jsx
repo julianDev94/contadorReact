@@ -1,6 +1,7 @@
 // Zona de imports
 import "bootstrap/dist/css/bootstrap.min.css";
 import TituloSecundario from "./components/TituloSecundario";
+import Contador from "./components/Contador";
 
 function App() {
   // Zona de logica que queremos que tenga el componente, todo lo que sea JS
@@ -35,7 +36,7 @@ function App() {
         {/* Las etiquetas HTML siempre se escriben en minuscula en comparacion de las etiqueta de componentes */}
         {/* React tambien nos dice que los componentes se pueden reutilizar cuantas veces quieramos. Es decir
         que si lo llamamos mas veces, este se va ejecutar las veces que sea llamado */}
-        
+        <Contador/>
       </section>
     </>
   );
