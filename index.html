@@ -17,34 +17,44 @@ componentes es .jsx -->
     <!-- Virtual DOM es una representacion visual del DOM de JS. Al crear un proyecto nuevo
     react hace una copia del DOM de JS, lo que esto permite mejorar el renderizado de un nodo de un
   elemento de html al realizar un cambio y no realizar el renderizado completo de la pagina. -->
+  <!-- React es una libreria basada en JS -->
   <!-- Vite nos ayuda a realizar un template, archivos preconfigurados para nuestro proyecto. -->
+  <!-- Para ejecutar nuestro proyecto debemos hacerlo con el comando npm run dev, este es un servidor interno de Vite -->
   <!-- Para comenzaar nuestro proyecto se debe instalar como primer paso las dependencias con el comando
   npm install. Esto sirve para descargar la carpeta node_module -->
   <!-- Cuando subimos nuestro proyecto a github, la carpeta de node_modules no se sube ya que es ignorada por github, ya
   que es una carpeta pesada y no es necesaria subirla. -->
   <!-- Para ver el diseño, debemos ir a app.jsx -->
-  <!-- para importar estilos de hace con import 'estilo.css' -->
+  <!-- para importar estilos se hace con import 'estilo.css' -->
   <!-- Borramos los import del archivo app.jsx -->
   <!-- Una de las reglas de los componentes es que siempre deben retornar algo en la funcion -->
   <!-- Cada componente de react yo lo voy a invocar desde otro lugar, entonces debe ir el export default App  -->
   <!-- Otro de los objetivos de react es que solamente haya archivos que solamente use -->
   <!-- Como recomendacion, si ya sabemos que libreria usaremos en nuestro proyecto, las descargamos en la rama main
   mediante el comando npm -->
+  <!-- el package.json contiene lista de dependencias -->
   <!-- Si eliminamos sin querer el package-lock o el node_modules no hay problema ya que podemos restaurarlos sin problemas
   con el comando npm install. El package.json hay que tener cuidado ya que aca esta la info relacionada a nuestras librerias. -->
-  <!-- Siempre ver el package.json para ver que dependencias tenemos instaladas -->
+  <!-- Siempre ver el package.json para ver que dependencias tenemos instaladas, de las librerias que instalamos -->
   <!-- Toda libreria que yo instalo se guarda en node_modules -->
-  <!-- Para poder utilizar las hojas de estilo de bootstrap debemos importarla ya sea en app.jsx o main.jsx -->
-  <!-- Siempre que haya instalado una libreria con npm install asique al importar las cosas que estan en
-  node_module hago de cuenta que la ruta ya estoy posicionado en la carpeta por ejemplo: 'bootstrap/' -->
-  <!-- Para cambiarle el estilo a las etiquetas html, react utiliza el className de JS -->
+  <!-- Para poder utilizar las hojas de estilo de bootstrap debemos importarla ya sea en app.jsx o main.jsx, ya que
+  estos son los primeros componentes que se van a ejecutar -->
+  <!-- Siempre que haya instalado una libreria con npm install al importar las cosas que estan en
+  node_module hago de cuenta que en la ruta ya estoy posicionado en la carpeta por ejemplo: 'bootstrap/' -->
+  <!-- Para cambiarle el estilo a las etiquetas html, react utiliza el atributo className de JS -->
   <!-- El componente principal que esta cargando es app.jsx
   El achivo main.jsx es un archivo que tiene logica y que simplemente dice cual es el primer componente que
 va a cargar y el que carga es app.jsx  -->
+<!-- Al nombrar las librerias estas tambien pueden llamarse dependencies -->
+<!-- Siempre en la rama main se deben limpiar el template que nos crea Vite y luego instalar las librerias (dependencies)
+que vamos a utilizar -->
+<!-- Para desarrollar nuestro proyecto seguimos en dev y luego recien ahi desplazar las rama para cada componente -->
 <!-- Los componentes siempre se crean dentro de la carpeta src (source). Y si vamos a crear varios componentes
 creamos una carpeta components -->
+<!-- El archivo main.jsx es una archivo que tiene logica y que solamente dice cual es el primer componente que va a cargar,
+y este es el app.jsx -->
 <!-- Reglas de react para crear componentes:
-1- El nombre de los archivos de los componentes siempre deben comenzar con mayuscula -->
+1- El nombre de los archivos de los componentes siempre deben comenzar con mayuscula upperCamelCase-->
 <!-- Para crear un esqueleto de react, escribiendo rsc (react stateless components) -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
