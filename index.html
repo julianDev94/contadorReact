@@ -56,6 +56,14 @@ y este es el app.jsx -->
 <!-- Reglas de react para crear componentes:
 1- El nombre de los archivos de los componentes siempre deben comenzar con mayuscula upperCamelCase-->
 <!-- Para crear un esqueleto de react, escribiendo rsc (react stateless components) -->
+<!-- Para react, la organizacion de padres e hijos es muy importante y que cualquier componente puede ser padre
+de otro componente -->
+<!-- React dice que la conversacion entre componentes se da de forma unidireccional, de arriba hacia abajo. Esto quiere
+decir que los componentes padres solamente le pueden mandar datos a los componente hijos y no al reves -->
+<!-- Siempre que queremos enviar datos de un componente padre a su hijo debemos utilizar el objeto props.
+Props es un objeto que sirve para guardar valores o funciones. Los props son objetos de solo lectura, es decir
+que es un objeto inmutable (que no se puede modificar) -->
+<!-- Para enviar props nos vamos al componente padre (el que envia la info) -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

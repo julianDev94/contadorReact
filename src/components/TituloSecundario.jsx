@@ -3,10 +3,13 @@
 // import React from 'react';
 // Siempre nuestros componentes se deben poder exportar
 
-const TituloSecundario = () => {
+// Una de las formas de mostrar los objetos props es agregar props en los parametros del componente
+// Y donde lo quiero usar pongo las {props.propiedad}
+const TituloSecundario = (props) => {
   return (
     <article>
-      <h2>Practica con react</h2>
+      {/* Siempre que escribimos dentro de react, codigo de js va encerrado entre llaves */}
+      <h2>Practica con react {props.anioActualprops}</h2>
       <p>
         React es una biblioteca de JavaScript desarrollada por Facebook que se
         utiliza para construir interfaces de usuario interactivas y eficientes.
@@ -21,6 +24,8 @@ const TituloSecundario = () => {
         estado global. Su popularidad se debe a su capacidad para crear
         aplicaciones web modernas y escalables, así como a una activa comunidad
         de desarrolladores y una documentación exhaustiva.
+        <br/>
+        Comisión: {props.comision}
       </p>
     </article>
   );
