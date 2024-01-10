@@ -64,6 +64,21 @@ decir que los componentes padres solamente le pueden mandar datos a los componen
 Props es un objeto que sirve para guardar valores o funciones. Los props son objetos de solo lectura, es decir
 que es un objeto inmutable (que no se puede modificar) -->
 <!-- Para enviar props nos vamos al componente padre (el que envia la info) -->
+<!-- El navegador no entiende jsx por lo que vite a traves de npm run dev levanta un servidor en la cual compila
+el codigo jsx para que el navegador pueda entender el codigo -->
+<!-- El virtual DOM es una tecnologia que es una copia identica del DOM de JS que tiene la inteligencia para
+solamente renderizar la informacion que estoy cambiando en alguno de los nodos -->
+<!-- React propuso dos componentes: 
+1- Componentes en forma de funciones
+2- Componentes en forma de clases -->
+<!-- Para poder renderizar una etiqueta de un componente, React nos propone utilizar el estado de ese componente para
+poder cambiar el texto de la etiqueta -->
+<!-- Los ClassComponent nacieron con este concepto de Estados, pero los FuncionalComponent no. -->
+<!-- Como la mayoria de los devs trabajaban con FuncionalComponents y estos no tienen implementado los estados, la gente de 
+React implemento las funciones llamadas Hooks que nos da una habilidad extra en nuestra FuncionalComponents, que esta es
+la de tener un state (Estado) -->
+<!-- Cuando yo tenga el state, ahi voy a poder guardar la informacion de los datos que quiero que cambie. Todo lo que yo no
+guarde en el state, react no lo va poder renderizar -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
